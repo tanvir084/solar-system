@@ -70,10 +70,10 @@ jobs:
     services: 
       mongo-db: 
         image: siddharth67/mongo-db:non-prod
-        options: 
-          -- name mongo
+        # options: 
+        #   --name mongo
     env: 
-      MONGO_URI: 'mongodb://mongo:27017/superData'
+      MONGO_URI: 'mongodb://localhost:27017/superData'
       MONGO_USERNAME: non-prod-user
       MONGO_PASSWORD: non-prod-password
 
